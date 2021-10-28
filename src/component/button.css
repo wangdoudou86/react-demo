@@ -1,0 +1,38 @@
+.d-button{
+    height: 32px;
+    background: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 4px 1em;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.d-button > .d-button-text{
+    position: relative;
+    z-index: 1;
+}
+.d-button > .d-button-circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dddddd;
+    opacity: 0.5;
+    animation: big 1s forwards;
+    position: absolute;
+    z-index: 0;
+}
+.d-button:focus{
+    border: 1px solid #333333;
+}
+
+@keyframes big {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(15);
+    }
+}
